@@ -1,0 +1,13 @@
+<p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+             -- Smart technical solutions for businesses that want quality without overspending.
+               -- code ai Technologies is an IT-based service company delivering practical, high-quality digital solutions for clients across websites, applications, SEO, digital marketing, IT management, UI/UX design, and database security.
+              </p>
+
+              Our USP is simple: we aim to deliver the best possible solution in the most cost-effective manner, so every investment feels worthwhile.
+
+
+              bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_30%),radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.05),transparent_25%)]
+
+
+
+              
