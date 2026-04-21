@@ -8,104 +8,131 @@ export default function page() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 "
-          style={
-            {
-              backgroundImage: "url('https://images.unsplash.com/photo-1712397943847-e104395a1a8b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
-            }
-          }
+    
+<section className="relative overflow-hidden border-b border-white/10">
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage:
+        "url('https://images.unsplash.com/photo-1712397943847-e104395a1a8b?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+    }}
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/55" />
+
+  <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-5 sm:py-8">
+    
+    {/* Header */}
+    <header className="flex flex-wrap items-center justify-between gap-4 rounded-full border border-white/10 bg-white/5 px-4 sm:px-6 py-3 backdrop-blur">
+      
+      {/* Logo */}
+      <div className="flex items-center gap-3">
+        <img
+          src="https://res.cloudinary.com/dpdwmxgd4/image/upload/v1776240966/ai_dremtu.png"
+          alt="Code AI Technologies Logo"
+          className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
         />
+      </div>
 
-        <div className="relative mx-auto max-w-8xl px-6 py-8 lg:px-10 ">
-          <header className="flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-6 py-3 backdrop-blur">
-            <div className="flex items-center gap-3">
-              <div className="rounded-xl">
-                <img
-                  src="https://res.cloudinary.com/dpdwmxgd4/image/upload/v1776240966/ai_dremtu.png"
-                  alt="Code AI Technologies Logo"
-                  className="h-13 w-auto object-contain rounded-full"
-                />
-              </div>
-            </div>
+      {/* Desktop Nav */}
+      <nav className="hidden md:flex gap-6 lg:gap-8 text-sm text-white/70">
+        <a href="#services" className="hover:text-white transition">
+          Services
+        </a>
+        <a href="#about" className="hover:text-white transition">
+          About
+        </a>
+        <a href="#why-us" className="hover:text-white transition">
+          Why Us
+        </a>
+        <a href="#contact" className="hover:text-white transition">
+          Contact
+        </a>
+      </nav>
+    </header>
 
-            <nav className="hidden gap-8 text-white/70 md:flex">
-              <a href="#services" className="transition hover:text-white">
-                Services
-              </a>
-              <a href="#about" className="transition hover:text-white">
-                About
-              </a>
-              <a href="#why-us" className="transition hover:text-white">
-                Why Us
-              </a>
-              <a href="#contact" className="transition hover:text-white">
-                Contact
-              </a>
-            </nav>
-          </header>
+    {/* Hero Section */}
+    <div className="grid gap-10 lg:grid-cols-2 items-center py-12 sm:py-16 lg:py-20">
+      
+      {/* Left Content */}
+      <div>
+        <h1 className="text-4xl sm:text-7xl md:text-7xl lg:text-7xl font-bold leading-tight text-white">
+          Code AI <br className="hidden sm:block" />
+          Technologies
+        </h1>
 
-          <div className="grid gap-12 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:py-12 px-5">
-            <div>
-              <h1 className="mt-6 max-w-4xl text-7xl font-bold leading-tight sm:text-5xl lg:text-8xl mb-5 ">
-                Code AI Technologies
-              </h1>
-              <span className="inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.25em] text-white/70">
-                IT Services • Design • Digital Growth
-              </span>
+        <span className="mt-5 inline-flex rounded-full border border-white/15 bg-white/5 px-4 py-2 text-[10px] sm:text-xs font-medium uppercase tracking-[0.2em] text-white/70">
+          IT Services • Design • Digital Growth
+        </span>
 
-              <p className="mt-4 max-w-2xl text-base leading-7 text-white/60">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <a
+            href="#contact"
+            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black text-center hover:scale-105 transition"
+          >
+            Get in Touch
+          </a>
 
+          <a
+            href="#services"
+            className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white text-center hover:bg-white/10 transition"
+          >
+            Explore Services
+          </a>
+        </div>
+      </div>
+
+      {/* Right Card */}
+      <div className="rounded-3xl border border-white/10 bg-white/5 p-4 sm:p-6 shadow-2xl backdrop-blur">
+        <div className="rounded-2xl border border-white/10 bg-black/80 p-4 sm:p-6">
+          
+          <p className="text-xs sm:text-sm uppercase tracking-[0.25em] text-white/50">
+            Company Snapshot
+          </p>
+
+          <div className="mt-5 space-y-4 text-sm text-white/80">
+            
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-white/50 text-xs sm:text-sm">Core Focus</p>
+              <p className="mt-1 font-medium text-sm sm:text-base">
+                Affordable, reliable, business-driven digital services
               </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition hover:scale-[1.02]"
-                >
-                  Get in Touch
-                </a>
-                <a
-                  href="#services"
-                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-                >
-                  Explore Services
-                </a>
-              </div>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur">
-              <div className="rounded-2xl border border-white/10 bg-black p-6">
-                <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-                  Company Snapshot
-                </p>
-
-                <div className="mt-6 space-y-4 text-sm text-white/80">
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-white/50">Core Focus</p>
-                    <p className="mt-1 font-medium">Affordable, reliable, business-driven digital services</p>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-white/50">Industries Served</p>
-                    <p className="mt-1 font-medium">[ Add target industries here ]</p>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-white/50">Years of Experience</p>
-                    <p className="mt-1 font-medium">[ Add experience / company journey here ]</p>
-                  </div>
-
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-white/50">Trusted By</p>
-                    <p className="mt-1 font-medium">[ Add clients / brands / social proof here ]</p>
-                  </div>
-                </div>
-              </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-white/50 text-xs sm:text-sm">
+                Industries Served
+              </p>
+              <p className="mt-1 font-medium text-sm sm:text-base">
+                Retail, Healthcare, Education, Startups
+              </p>
             </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-white/50 text-xs sm:text-sm">
+                Years of Experience
+              </p>
+              <p className="mt-1 font-medium text-sm sm:text-base">
+                5+ Years of Excellence
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p className="text-white/50 text-xs sm:text-sm">Trusted By</p>
+              <p className="mt-1 font-medium text-sm sm:text-base">
+                50+ Businesses Worldwide
+              </p>
+            </div>
+
           </div>
         </div>
-      </section>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <section id="services" className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
         <div className="max-w-2xl">
