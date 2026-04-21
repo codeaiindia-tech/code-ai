@@ -3,6 +3,7 @@ import { FaSitemap } from "react-icons/fa";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { MdOutlineDesignServices, MdOutlineSettingsApplications } from "react-icons/md";
+import { PiMonitorArrowUpBold } from "react-icons/pi";
 import { TbSeo } from "react-icons/tb";
 
 export const services = [
@@ -22,7 +23,7 @@ export const services = [
         title: "SEO",
         description:
             "Search-friendly structure and optimization to help your business get discovered online.",
-            icon: TbSeo
+            icon: PiMonitorArrowUpBold
     },
     {
         title: "Digital Marketing",

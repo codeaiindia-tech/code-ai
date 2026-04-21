@@ -314,7 +314,7 @@ export default function page() {
 </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/[0.03] p-8 sm:p-10">
+        <div className="rounded-[2rem] sm:border border-white/10 sm:bg-gradient-to-br from-white/10 to-white/[0.03] p-5 sm:p-10">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-center">
             <div>
               <p className="text-sm uppercase tracking-[0.25em] text-white/50">Let’s Build</p>
@@ -326,9 +326,9 @@ export default function page() {
               </p>
             </div>
 
-            <div id="contact" className="rounded-3xl border border-white/10 bg-black/60 p-6">
-              <p className="text-sm uppercase tracking-[0.25em] text-white/50">Contact Area</p>
-              <div className="mt-5 space-y-4 text-white/80">
+            <div id="contact" className="rounded-3xl border border-white/10 bg-black/60 p-5">
+              <p className="text-sm uppercase tracking-[0.25em] text-white/50 ">Contact Area</p>
+              <div className="mt-5 space-y-4 text-white/80 ">
                 <div>
                   <p className="text-white/50">Email</p>
                   <p>codeaiindia@gmail.com</p>
