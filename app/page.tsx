@@ -317,7 +317,7 @@ export default function page() {
                         </h3>
 
                         <p className="mt-3 max-w-xl text-sm leading-7 text-white/60 sm:text-base">
-                          [ Add short project description / scope / business impact here ]
+                          {project.description}
                         </p>
                       </div>
                     </div>

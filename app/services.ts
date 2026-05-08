@@ -4,7 +4,6 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { MdOutlineDesignServices, MdOutlineSettingsApplications } from "react-icons/md";
 import { PiMonitorArrowUpBold } from "react-icons/pi";
-import { TbSeo } from "react-icons/tb";
 
 export const services = [
     {
@@ -58,25 +57,29 @@ export const projects = [
           number: "01",
           name: "propcliq.com",
           type: "Platform Website",
-          link: "https://www.propcliq.com/"
+          link: "https://www.propcliq.com/",
+          description: "It connects property seekers with owners, agents, and builders through verified listings, market insights, and location-based property search tools."
         },
         {
           number: "02",
           name: "my.propcliq.com",
           type: "Client Portal",
-          link: "https://my.propcliq.com/auth/login"
+          link: "https://my.propcliq.com/auth/login",
+          description: "It provides a centralized dashboard for streamlining property sales, partner collaboration, and real estate business operations through digital tools and automation."
         },
         {
           number: "03",
           name: "api.propcliq.com",
           type: "Backend API System",
-          link: "https://api.propcliq.com/"
+          link: "https://api.propcliq.com/",
+          description: "It handles core functionalities such as authentication, property data management, lead processing, user operations, and real estate workflow automation."
         },
         {
           number: "04",
           name: "investordelights.com",
           link: "https://www.investordelights.com/",
           type: "Business Website",
+          description: "It helps users showcase, discover, and close real estate deals faster with a transparent and investor-focused marketplace experience."
         },
       ]
 
